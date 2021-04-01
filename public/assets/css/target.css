@@ -1,0 +1,61 @@
+
+ /*the container must be positioned relative:*/
+.autocomplete {
+ position: relative;
+  display: inline-block;
+}
+
+/* adds the following properties to the submit button */
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  height:37px; 
+}
+
+/* adds the following properties to input text field */
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+/* adds the following properties to the submit button */
+input[type=submit] {
+  background-color:silver;
+  color: black;
+}
+
+/*adds the following features to the autocomplete-items */
+.autocomplete-items {
+  position: absolute;
+  border:1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 54px; /* original top:100%; */
+  left: 0;
+  right: 0;
+  
+
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color:green;
+  border-bottom: 1px solid #d4d4d4;
+ border-bottom-style: none;
+}
+
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #050542;
+  color:white;
+}
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}

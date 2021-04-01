@@ -1,0 +1,93 @@
+.searchMenu{
+    position: relative;
+    left:200px; 
+}
+
+.shift-me{
+    color:blue;
+}
+
+/* styles the intro heading on the bilancodersacademy homepage  */
+.my-name{
+  color:blue; 
+  font-size:35px;
+}
+
+.flex-center{
+    color:yellow;
+}
+
+.nav-item-1{
+    background-color: brown;
+}
+
+.searchMenu{
+    position: relative;
+    left:3px;
+    width:350px;
+    top:3px;
+
+}
+
+/* positions the dropdown-menu just below and in line with the bootstrap navbar */
+#navbarSupportedContent ul .dropdown .dropdown-menu{
+    margin-top: 15px;
+    background-color: green;
+}
+
+.dropdown-menu{
+background-color:gray;
+position: relative;
+background-color:green; 
+margin-top:35px; 
+}
+
+.dropdown-item:hover{
+background-color:#050542; 
+padding-bottom: 20px;
+height: 34px;
+color:white;
+}
+
+.nav-item:hover{
+    background-color: brown;
+}
+
+.images{
+    text-align: center;
+    position: relative;
+    left:18px;
+}
+
+/* adds the following properties to the 2nd paragraph  heading*/
+.my-intro{
+    font-size:27px;
+    color:blue;
+}
+
+/* adds the following properties to the 1st paragraph on the bilancodersacademy homepage */
+.lead{
+    font-size:19px;
+}
+
+/* adds the following properties to the 2nd paragraph on the bilancodersacademy homepage */
+.begin{
+    font-size:15px;
+
+}
+
+/* adds the following properties to the description list on the bilancodersacademy homepage */
+.custom{
+font-size:15px;
+position: relative;
+color:brown;
+left:70px;
+text-decoration: underline;
+}
+
+.me-2{
+position: relative;
+top:-1px;    
+}
+
+
