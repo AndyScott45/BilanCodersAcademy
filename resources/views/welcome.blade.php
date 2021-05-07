@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/public/assets/css/app.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/target.css">
-
+    
     <title>Hello, world!</title>
   </head>
   <body>
@@ -76,7 +76,7 @@
                     @auth
    <a class="nav-link  drop-down active" aria-current="page" href="{{ url('/home') }}">HOME</a>
                     @else
-                    <a class="nav-link sub-1 drop-down active" aria-current="page" href="{{ url('/login') }}">LOGIN</a>                      
+                    <a class="nav-link sub-1 drop-down active" aria-current="page" href="{{ url('/sign-up') }}">LOGIN</a>                      
    @if (Route::has('register'))
    <li class="nav-item dropdown">
 <a class="nav-link sub-way drop-down active" aria-current="page" href="{{ url('/register') }}">REGISTER</a>                       
