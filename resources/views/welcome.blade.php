@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
         <div class="container-fluid">
         <img src="assets/img/mydec.jpg" class="C" salt="" width="60" height="60">
-          <a class="navbar-brand shift-me" href="#">ILANCodersAcademy</a>
+          <a class="navbar-brand shift-me" href="{{ url('/') }}">ILANCodersAcademy</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -58,7 +58,6 @@
                 </a>
               </li>
 
-
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                TECH NEWS 
@@ -76,7 +75,7 @@
                     @auth
    <a class="nav-link  drop-down active" aria-current="page" href="{{ url('/home') }}">HOME</a>
                     @else
-                    <a class="nav-link sub-1 drop-down active" aria-current="page" href="{{ url('/sign-up') }}">LOGIN</a>                      
+                    <a class="nav-link sub-1 drop-down active" aria-current="page" href="{{ url('/login') }}">LOGIN</a>                      
    @if (Route::has('register'))
    <li class="nav-item dropdown">
 <a class="nav-link sub-way drop-down active" aria-current="page" href="{{ url('/register') }}">REGISTER</a>                       
