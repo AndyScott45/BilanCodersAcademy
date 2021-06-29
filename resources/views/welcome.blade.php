@@ -54,8 +54,13 @@
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  MYSQL
+                  DATABASES
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">MYSQL</a></li>
+                  <li><a class="dropdown-item" href="#">POSTGRE</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </li>
 
               <li class="nav-item dropdown">
@@ -69,23 +74,36 @@
                 </ul>
               </li>     
 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVERS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">APACHE</a></li>
+                </ul>
+              </li>
+
              <li class="nav-item dropdown">
             @if (Route::has('login'))
                 <li class="nav-item dropdown">
                     @auth
    <a class="nav-link  drop-down active" aria-current="page" href="{{ url('/home') }}">HOME</a>
                     @else
-                    <a class="nav-link sub-1 drop-down active" aria-current="page" href="{{ url('/login') }}">LOGIN</a>                      
-   @if (Route::has('register'))
-   <li class="nav-item dropdown">
-<a class="nav-link sub-way drop-down active" aria-current="page" href="{{ url('/register') }}">REGISTER</a>                       
-   @endif
-  @endauth
-</li>
-@endif
-</li>
-</li>
+                    <a class="nav-link sub-1 drop-down active" aria-current="page" href="{{ url('/login') }}">LOGIN</a>
 
+<!--    prevents the register element from appearing as a clickable button on the navigation bar 
+             @if (Route::has('register'))
+             <li class="nav-item dropdown">
+             <a class="nav-link sub-way drop-down active" aria-current="page" href="{{ url('/register') }}">REGISTER</a>                       
+    @endif
+-->
+
+    @endauth
+    </li>
+    @endif
+    </li>
+
+<!-- Adds a searchMenu to the welcome page -->
 <div class="searchMenu">
             <form autocomplete="off" action="/action_page.php" class="d-flex">
               <input class="form-control autocomplete me-2" type="text" name="myCountry" id="myInput" placeholder="Country" aria-label="Search">

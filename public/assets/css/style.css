@@ -1,6 +1,7 @@
+/* adds the following properties to the body of the body */
 body {
     margin: 0;
-    color: yellow;
+   color:gold;
     background:#ffffff;
     font: 600 16px/18px 'Open Sans', sans-serif;
 }
@@ -8,7 +9,7 @@ body {
 /* adds the following properties to the image class */
 .resize{
     position: relative;
-    left:-80px;
+    left:-65px;
     top:50px;
 }
 
@@ -24,13 +25,14 @@ body {
     height: 520px;
     position: relative;
     padding: 90px 70px 50px 70px;
-    background:black; /* rgba(0, 77, 77, .9);  */   
+    background:#1b1b1b; /* rgba(0, 77, 77, .9);  */   
 }
 
 /* adjusts the position of the login and sign up elements on the login/sign up panel */
 .tab{
     position: relative;
     top:-50px;
+    left:-12px;
 }
 
 /* hides the login and sign up panel upon click */
@@ -68,7 +70,14 @@ body {
     margin: 0 15px 10px 0;
     display: inline-block;
     border-bottom: 2px solid transparent;
+    left:5px; /* aligns the username, email-address, password and confirm password directly under login/signup panel */
   
+}
+
+/* aligns the email address and password directly under the login/sign-up panel */
+.login .group{
+    position:relative;
+    left:12px;
 }
 
 /* adds the a white margin below the login and sign up elements */
@@ -85,6 +94,8 @@ body {
     perspective: 1000px;
     transform-style: preserve-3d;
     top:-60px;
+    left:-8px;
+    
 }
 
 /* adds the following properties to the group elements */
@@ -209,6 +220,7 @@ a {
     background: white;
     position: relative;
     top:-30px;
+    left:2px;
     text-align: center;
 }
 
@@ -246,7 +258,7 @@ a {
 /* adds the following properties to the Sign Up button */
 .card-body .group .it-button{
    color:black;
-   background-color: green;
+   background-color: brown;
    position: relative;
    top:-70px;
    left:83px;
@@ -256,6 +268,71 @@ a {
     background-color:white;
 }
 
-.it-button :hover{
-    background-color:#050542; 
+.login .group .input{
+    background-color:white;
+}
+
+.login .form-group{
+    position:relative;
+    top:10px;
+}
+
+.foot{
+    position:relative;
+    top:-70px;
+}
+
+.login-box .sign-up{
+    position:relative;
+    top:56px;
+}
+
+/* moves the position of the little check-box that is ticked to remember the user details further down the page */
+.form-check-input{
+position:relative;
+top:10px;
+}
+
+/*moves the position of the "keep me signed in" text further down the page to be in line with the little-tick-box */
+.form-check-label{
+position:relative;
+top:10px;
+}
+
+/* adjusts the position of the sign-in button on the login/sign-up panel */
+.button{
+    position:relative;
+    top:10px;
+    background-color:black;
+}
+
+.group .button{
+    color:white;
+}
+
+/* adds the following properties to the sign-in button */
+input#h-effect{
+    background-color: brown;
+    color:white;
+    text-align:center;
+}
+
+
+/* adds a hover effect to the sign-in element on the login/sign-up panel */
+input#h-effect:hover{
+    background-color:green;
+}
+input#my-button:hover{
+background-color:green;
+}
+
+input#my-button{
+    color:white;
+}
+
+#h-effect{
+    color:black;
+}
+.login .group .button{
+    color:white;
 }

@@ -16,12 +16,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/target.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/adjust.css">
-     <!-- This css styles affects the color of the navbar Styles 
-     <link href="http://127.0.0.1:8000/assets/css/app.css" rel="stylesheet">
-     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-      -->
-      
-    <title>Hello, world!</title>
+
+  <title>Hello, world!</title>
   </head>
   <body>
 
@@ -64,8 +60,13 @@
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  MYSQL
+                  DATABASES
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">MYSQL</a></li>
+                  <li><a class="dropdown-item" href="#">POSTGRE</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </li>
 
 
@@ -78,7 +79,16 @@
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-              </li>     
+              </li>  
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVERS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">APACHE</a></li>
+                </ul>
+              </li>
             <!-- Authentication links !-->
 
 
@@ -87,12 +97,16 @@
 @guest
 <li class="nav-item">
 <a class="nav-link drop-down active" aria-current="page" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
-</li>  
+</li>
+
+<!--
 @if (Route::has('register'))
 <li class="nav-item">
 <a class="nav-link drop-down active" aria-current="page" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
 </li>
 @endif
+-->
+
 @else
 <li class="nav-item dropdown">
 <a id="navbarDropdown" class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
