@@ -1,3 +1,71 @@
+/* targets the frontend button and adds a green background hover effect to it as well as the following properties to the other elements */
+var addBackgroundFrontEndHover=document.getElementById("item1");
+addBackgroundFrontEndHover.addEventListener('show.bs.dropdown', function () {
+addBackgroundBackEndHover.style.backgroundColor = 'inherit'; 
+addBackgroundDatabaseHover.style.backgroundColor = 'inherit';
+changeTechNewsBackgroundColor.style.backgroundColor='inherit'; 
+addBackgroundServersHover.style.backgroundColor = 'inherit';
+addLoginHoverEffect.style.backgroundColor = 'inherit';
+addBackgroundFrontEndHover.style.backgroundColor = 'green'; 
+  });
+
+
+  /* targets the backend button and adds a green background hover effect to it as well as the following properties to the other elements */
+var addBackgroundBackEndHover = document.getElementById('item2')
+addBackgroundBackEndHover.addEventListener('show.bs.dropdown', function () {
+addBackgroundFrontEndHover.style.backgroundColor = 'inherit';
+addBackgroundDatabaseHover.style.backgroundColor = 'inherit'; 
+changeTechNewsBackgroundColor.style.backgroundColor='inherit'; 
+addBackgroundServersHover.style.backgroundColor = 'inherit';
+addLoginHoverEffect.style.backgroundColor = 'inherit';
+addBackgroundBackEndHover.style.backgroundColor = 'green';
+  });
+
+/* targets the database button and adds a green background hover effect to it as well as the following properties to the other elements */ 
+var addBackgroundDatabaseHover=document.getElementById('item3')
+addBackgroundDatabaseHover.addEventListener('show.bs.dropdown', function () {
+addBackgroundFrontEndHover.style.backgroundColor = 'inherit';
+addBackgroundBackEndHover.style.backgroundColor = 'inherit'; 
+changeTechNewsBackgroundColor.style.backgroundColor='inherit'; 
+addBackgroundServersHover.style.backgroundColor = 'inherit';
+addLoginHoverEffect.style.backgroundColor = 'inherit';
+addBackgroundDatabaseHover.style.backgroundColor = 'green'; 
+});
+
+/* targets the tech-news button and adds a green background hover effect to it as well as the following properties to the other elements */
+var changeTechNewsBackgroundColor=document.getElementById('item4');
+changeTechNewsBackgroundColor.addEventListener('show.bs.dropdown', function(){
+addBackgroundFrontEndHover.style.backgroundColor = 'inherit';
+addBackgroundBackEndHover.style.backgroundColor = 'inherit';
+addBackgroundDatabaseHover.style.backgroundColor = 'inherit'; 
+addBackgroundServersHover.style.backgroundColor = 'inherit';
+addLoginHoverEffect.style.backgroundColor = 'inherit';
+changeTechNewsBackgroundColor.style.backgroundColor='green'; 
+});
+
+/* targets the server button and adds a green background hover effect to it as well as the following properties to the other elements */
+var addBackgroundServersHover=document.getElementById('item5');
+addBackgroundServersHover.addEventListener('show.bs.dropdown', function () {
+addBackgroundFrontEndHover.style.backgroundColor = 'inherit';
+addBackgroundBackEndHover.style.backgroundColor = 'inherit';
+addBackgroundDatabaseHover.style.backgroundColor = 'inherit';
+changeTechNewsBackgroundColor.style.backgroundColor='inherit'; 
+addLoginHoverEffect.style.backgroundColor = 'inherit';
+addBackgroundServersHover.style.backgroundColor = 'green';
+});
+
+
+/* targets the login button and adds a green hover effect to it upon click */
+var addLoginHoverEffect=document.getElementById("item6");
+addLoginHoverEffect.addEventListener("click", function(){
+addBackgroundFrontEndHover.style.backgroundColor = 'inherit';
+addBackgroundBackEndHover.style.backgroundColor = 'inherit';
+addBackgroundDatabaseHover.style.backgroundColor = 'inherit';
+changeTechNewsBackgroundColor.style.backgroundColor='inherit'; 
+addBackgroundServersHover.style.backgroundColor = 'inherit';
+this.style.backgroundColor = 'green';
+}); 
+
 var countries = ["Javascript","Phyton", "How can I", "Asp.net","Ruby on rails","PHP","Bootstrap","React","Jquery","HTML","CSS","Typescript","Vue.js","Angular.js","Object oriented programming", "Java","MYSQL","LARAVEL"];
 
 function autocomplete(inp, arr) {
