@@ -93,6 +93,22 @@ position: relative;
 top:-1px;    
 }
 
+/* styles the introduction to computer programming page title on the login page */
+.my-page2{
+font-size:28px;
+color:blue;
+position: relative;
+top:5px;
+left:10%;
 
+}
 
+/* adds the following features to the text on the login page */
+.starter-2{
+    font-size:18px;
+    color:#555555;
+}
 
+.p-4{
+    top:25px;
+}

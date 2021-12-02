@@ -105,14 +105,17 @@
     </li>
 
 <!-- Adds a searchMenu to the welcome page -->
+
 <div class="searchMenu">
             <form autocomplete="off" action="/action_page.php" class="d-flex">
               <input class="form-control autocomplete me-2" type="text" name="myCountry" id="myInput" placeholder="Country" aria-label="Search">
               <input type="submit">
               
               <!--
-              <button class="btn btn-outline-success" type="submit">Search</button> -->
+              <button class="btn btn-outline-success" type="submit">Search</button> 
+              -->
             </form>
+</div>
 
 </li>
 </ul>

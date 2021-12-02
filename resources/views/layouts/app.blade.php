@@ -133,8 +133,9 @@ document.getElementById('logout-form').submit();">
               <input class="form-control autocomplete me-2" type="text" name="myCountry" id="myInput" placeholder="Country" aria-label="Search">
               <input type="submit">
               
-              <!--
-              <button class="btn btn-outline-success" type="submit">Search</button> -->
+            <!--   
+            <button class="btn btn-outline-success" type="submit">Search</button> 
+            -->
             </form>
 
         </div>
@@ -152,4 +153,3 @@ document.getElementById('logout-form').submit();">
     <script type="text/javascript" src="assets/qb/myEdit.js"></script>  
   </body>
     </html>
-    

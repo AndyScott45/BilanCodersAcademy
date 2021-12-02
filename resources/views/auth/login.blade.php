@@ -151,7 +151,10 @@
                                           <div class="hr-1"></div>
 
                                           <div class="group"><input type="submit" id="my-button" class="it-button" value="Sign Up"></div>
-                                   
+                                          
+                                          <!-- Creates a new title on login page -->
+                                              
+                                          
                                     <!-- commented out the bootstrap register button
                                          <div class="group form-group row mb-0">
                                             <div class="col-md-6 offset-md-4">
@@ -166,7 +169,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 p-4 mx-auto p-0">
+                   <div class="my-page p-2 rounded"> 
+                        <h1 class="my-page2">Introduction to Computer Programming</h1>
+                          <p class="starter-2">Computer Programming is the process of telling a computer to perform specific actions by giving it a set of instructions. These instructions are referred to as programs. A person who writes instructions is a computer programmer. The instructions may come in different langauges like Javascript, PHP, python. Ruby on Rails, Asp.net. These languages are referred to as programming languages.</p>
+                   </div>
+               </div>  
+
+        </div>
         </div>
 
 

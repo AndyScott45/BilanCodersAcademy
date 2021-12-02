@@ -1,7 +1,7 @@
 /* adds following properties to the search-menu on the login page */
 .searchMenu{
     position: relative;
-    left:-11px;
+    left:-15px;
     width:350px;
     top:1px;
 }
