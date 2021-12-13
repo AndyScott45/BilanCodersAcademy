@@ -1,0 +1,87 @@
+*{
+    margin:0px;
+    padding:0px;
+  }
+  
+  body, html{
+  min-height:100%;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+  }
+  
+  body{
+    background-color:#f9f9f9;
+    background-image: url('../images/backgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  #check{
+    display:none; /* removes the checkbox from displaying */
+  }
+  #icone{
+    cursor:pointer;
+    padding:15px;
+    position:absolute;
+    Z-index:1;
+  
+  }
+  /* adds the following features to the barra class */
+  .barra{
+      background-color:#333;
+      height:100%;
+      width:300px;
+      position:absolute;
+      transition: all .2s linear;
+      left:-300px; /* hides the link item contents upon clicking of the icone icon */
+    }
+  
+    nav{
+    width:100%;
+    position:absolute;
+    top:100px;
+    }
+  
+    nav a{
+      text-decoration:none; /* removes the text decoration from the link items */
+    }
+  
+  /* adds the following features to the link class */
+    .link{
+      background-color:#494950;
+      padding:20px;
+      font-family:'Arial';
+      font-size:12px;
+      transition: all .2s linear;
+      color:#f4f4f9;
+      border-bottom: 2px solid #222;
+      text-decoration: underline;
+      opacity:0;
+      margin-top:200px;
+  }
+  
+    .link:hover{
+    background-color: #050542; /*  adds a hover effect over the list items */
+  }
+  
+  #check:checked ~ .barra{
+    transform:translateX(300px); /* makes the icone return the list items to its original position upon click */
+  }
+  
+  /* adds the following features to the barra nav a .link class and a transition delay of 2 seconds*/
+  #check:checked ~ .barra nav a .link{
+    opacity:1;
+    margin-top:0;
+    transition-delay: .2s
+  }
+  
