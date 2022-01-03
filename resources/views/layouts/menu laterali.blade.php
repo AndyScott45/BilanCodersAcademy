@@ -12,29 +12,64 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <!-- adds an external javascript to the menu laterali homepage -->
+    <script src="{{ asset('js/myscripts.js') }}" defer></script>
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/target.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/adjust.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/menu laterali.css">
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
  
 </head>
 <body>
+
+<!-- Home page Content -->
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+        
+<input type='checkbox' id='check'>
+<label id='icone' for='check'><img src='assets/img/icone.png'></label>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+<div class='barra'>
+<nav>
+<a href=""><div class='link'>Home</div></a>
+<a href=""><div class='link'>Tutorials</div></a>
+<a href=""><div class='link'>Downloads</div></a>
+<a href=""><div class='link'>Events</div></a>
+<a href=""><div class='link'>Contacts</div></a>
+<a href="{{ route('logout') }}"><div id='myID' class='link'>logout</div></a>
+
+</nav>
+</div>
+
+<!-- creates a form element with a route for redirection to the home page -->
+<div>
+<form id="myID" action="{{ route('logout') }}" method="POST" style="display: none;">
+@csrf
+</form>
+</div>
+
+<!-- Navbar starts -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left Side Of Navbar -->
+            <ul class="navbar-nav mr-auto">
 
                     </ul>
 
@@ -55,18 +90,8 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
+                               
+                               
                             </li>
                         @endguest
                     </ul>
@@ -74,9 +99,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+
     </div>
 </body>
 </html>

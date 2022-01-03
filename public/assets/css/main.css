@@ -17,6 +17,11 @@
     color:yellow;
 }
 
+.navbar{
+    position: relative;
+    top:10px;
+}
+
 .nav-item-1{
     background-color: brown;
 }
@@ -38,17 +43,23 @@
 }
 
 .dropdown-menu{
-background-color:gray;
+background-color:brown;
 position: relative;
 background-color:green; 
 margin-top:35px; 
 }
 
+.dropdown-item-3{
+    background-color: brown;
+}
+
+
+/* adds a hover effect with the following properties to the dropdown menu*/
 .dropdown-item:hover{
-background-color:#050542; 
+background-color:#050542;  
 padding-bottom: 20px;
 height: 34px;
-color:white;
+color:green;
 }
 
 /*
@@ -111,5 +122,17 @@ left:10%;
 
 .p-4{
     top:25px;
+}
+
+.stepA{
+    position: absolute;
+    top:76px;
+    background-color:#ff0000;
+}
+
+#myId{
+    background color:green;
+    position:absolute;
+    top:98px;
 }
 

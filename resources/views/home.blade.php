@@ -1,23 +1,21 @@
 @extends('layouts.menu laterali')
 
+
+
+
+
+<!--
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<input type='checkbox' id='check'>
+<label id='icone' for='check'><img src='assets/img/icone.png'></label>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
+<div class='barra'>
+<nav>
+<a href=""><div class='link'>Home</div></a>
+<a href=""><div class='link'>Tutorials</div></a>
+<a href=""><div class='link'>Downloads</div></a>
+<a href=""><div class='link'>Events</div></a>
+<a href=""><div class='link'>Contacts</div></a>
+</nav>
 </div>
-@endsection
+-->
