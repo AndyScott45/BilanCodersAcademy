@@ -11,17 +11,19 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+   
     <!-- adds an external javascript to the menu laterali homepage -->
-    <script src="{{ asset('js/myscripts.js') }}" defer></script>
+     <script src="{{ asset('js/myscripts.js') }}" defer></script>
 
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    
+
     <!-- Styles -->
- <!-- Bootstrap CSS -->
+ <!-- Bootstrap CSS  -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="/public/assets/css/app.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -38,28 +40,73 @@
 
 <!-- Home page Content -->
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-transparent shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent ">
             <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
         
 <input type='checkbox' id='check'>
-<label id='icone' for='check'><img src='assets/img/icone.png'></label>
+<label id='icone' for='check'><img class="gift" src='assets/img/icone.png'></label>
 
 <div class='barra'>
-<nav>
-<a href=""><div class='link'>Home</div></a>
-<a href=""><div class='link'>Tutorials</div></a>
-<a href=""><div class='link'>Downloads</div></a>
-<a href=""><div class='link'>Events</div></a>
-<a href=""><div class='link'>Contacts</div></a>
-<a href="{{ route('logout') }}"><div id='myID' class='link'>logout</div></a>
 
+<nav>
+   
+<li><a href=""><div class='link reset-00'>FRONT-END &#9662;</div></a>
+        <ul class="dropdown-1">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">TYPESCRIPT</a></li>
+        </ul>
+   </li>
+
+
+
+<li><a href=""><div class='link reset-01'>BACK-END  &#9662;</div></a>
+        <ul class="dropdown-1 set-01">
+            <li><a href="#">NODE.JS</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">LARAVEL</a></li>
+            <li><a href="#">PYTHON</a></li>
+        </ul>
+    </li>
+
+<li> <a href=""><div class='link reset-03'>LIBRARY/FRAMEWORK &#9662;</div></a>
+     <ul class="dropdown-1 set-02">
+           <li><a href="#">BOOTSTRAP</a></li>
+            <li><a href="#">JQUERY</a></li>
+            <li><a href="#">REACT.JS</a></li>
+            <li><a href="#">ANGULAR.JS</a></li>
+    </ul>
+</li>
+
+
+<li> <a href=""><div class='link reset-02'>DATABASE &#9662;</div></a>
+    <ul class="dropdown-1 set-02">
+           <li><a href="#">MYSQL</a></li>
+            <li><a href="#">POSTGRE</a></li>
+            <li><a href="#">MONGOBDB</a></li>
+    </ul>
+</li>
+
+
+<li> <a href=""><div class='link reset-04'>VERSION CONTROL&#9662;</div></a>
+<ul class="dropdown-1 set-03">
+           <li><a href="#">GIT</a></li>
+            <li><a href="#">BITBUCKET</a></li>
+    </ul>
+</li>
+
+
+<li> <a href="logout"><div class='link reset-05'>LOGOUT</div></a></li>
+   
 </nav>
+
 </div>
 
-<!-- creates a form element with a route for redirection to the home page -->
+<!-- creates a form element with a route for redirection to the welcome page -->
 <div>
 <form id="myID" action="{{ route('logout') }}" method="POST" style="display: none;">
 @csrf
@@ -99,7 +146,7 @@
             </div>
         </nav>
 
-
+    </div>
     </div>
 </body>
 </html>
