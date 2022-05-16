@@ -93,8 +93,8 @@ nav li ul.dropdown-1 li a:hover {
   background-color: brown;
   padding:10px;
   width:auto;
- 
-  margin: -16px 0px 0px 0px; /* top right bottom left */
+  padding-left:10px;
+  margin: -16px 32px 0px -30px; /* top right bottom left */
 }
 
 /* adds the following features to the front-end drop down contents */
