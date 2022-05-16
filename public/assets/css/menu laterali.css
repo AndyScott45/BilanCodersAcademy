@@ -1,281 +1,305 @@
 * {
-    margin: 0;
-    padding: 0;
-   }
-   body{
-     background-color:#f9f9f9; /* changes the background-color to the selected */
-   }
- 
- 
- 
-   #check{
-     display:none;
-   }
- 
-   #icone{
-     cursor:pointer;
-     padding:15px;
-     position:absolute;
-     Z-index:1;
-     top:-18px;
- 
-   }
- 
-   /* adds the following features to barra class */
-   .barra{
-     background-color:brown;
-     height:100%;
-     width:300px;
-     position:absolute;
-     left:-400px; /* makes the icone hide the list items upon click */
-     top:0px;
-   }
- 
-   /* adds the following features to the nav items */
-   nav{ 
-     width:100%;
-     position:absolute;
-     top:55.3px;
-     left:0px; 
-   }
- 
-   /* adds the following properties to the link class */
-   .link{
-     background-color:#494950;
-     padding:20px;
-     font-family:'Arial';
-     font-size:12px;
-     transition: all .2s linear;
-     color:#f4f4f9;
-     border-bottom: 2px solid #222; /* adds a border bottom to the link class */
-     opacity:0;
-     margin-top:200px;
-     position:relative;
-     display:block;
-     top:-24.9px;
+  margin: 0;
+  padding: 0;
  }
- 
-  .link:hover{
-   background-color:green; /*  adds a hover effect over the list items */
-
+ body{
+   background-color:#f9f9f9; /* changes the background-color to the selected */
  }
 
- 
+
+
+ #check{
+   display:none;
+ }
+
+ /* adds the following features to the icone */
+ #icone{
+   cursor:pointer;
+   padding:15px;
+   position:absolute;
+   Z-index:1;
+   top:-30px;
+ }
+
+ /* adds the following features to barra class */
+ .barra{
+   background-color:black;
+   height:58px;
+   width:300px;
+   position:absolute;
+   left:-400px; /* makes the icone hide the list items upon click */
+   top:-10px;
+ }
+
+ /* adds the following features to the nav items */
+ nav{ 
+   width:100%;
+   position:absolute;
+   top:55.3px;
+   left:0px; 
+   list-style: none;
+ }
+
+ /* adds the following properties to the link class */
+ .link{
+   background-color:#494950;
+   padding:20px;
+   font-family:'Arial';
+   font-size:12px;
+   transition: all .2s linear;
+   color:#f4f4f9;
+   border-bottom: 2px solid #222; /* adds a border bottom to the link class */
+   opacity:0;
+   margin-top:200px;
+   position:relative;
+   display:block;
+   top:-24.9px;
+}
+
+/* adds a green hover effect to each technology stack element */
+nav li a .link:hover{
+  background-color: green;
+}
 
 /* adds the following features to the dropdown */
 nav li ul.dropdown-1{
-  position:relative;
-  display:none; 
-  background-color:black;
-  height:160px;
-  min-width: 100%;
-  top:-10px;
+position:relative;
+display:none; 
+background-color:black;
+height:160px;
+min-width: 100%;
+top:-10px;
 }
 
 /* displays the dropdown */
 nav li:hover ul.dropdown-1{
-  display:block;
+display:block;
 }
 
 nav li ul.dropdown-1 li{
 display:block;
 }
 
+/* adds a yellow color to the drop down contents */
+nav .dropdown-1 li a{
+  color:yellow;
+}
+
+/* adds the following features to the dropdown contents upon hover over technology stacks */
+nav li ul.dropdown-1 li a:hover {
+  position:relative;
+  display:block;
+  text-align:left;  
+  background-color: brown;
+  padding:10px;
+  width:auto;
+ 
+  margin: -16px 0px 0px 0px; /* top right bottom left */
+}
+
+/* adds the following features to the front-end drop down contents */
+.set-00{
+  position:relative;
+  display:block;
+  top:18px !important;
+}
 
 /* adds the following class to the backend dropdown contents and adjust the contents according to the following features */
 .set-01{
-  position:relative;
-  display:block;
-  top:-34px !important;
+position:relative;
+display:block;
+top:17px !important;
 }
 
 /* adds the following features to the database dropdown contents */
 .set-02{
-  position:relative;
-  display:block;
-  top:-64px !important;
+position:relative;
+display:block;
+top:16px !important;
 }
 
-/* adds the following class to the library/framework dropdown contents and adjust the contents according to the following features */
+/* adds the following features to the database dropdown list items */
+.set-03{
+  position:relative;
+  display:block;
+  top:15px !important;
+}
 
+/* adds the following features to the version control dropdown list items */
+.set-04{
+  position:relative;
+  display:block;
+  top:14px !important;
+}
 
 /* adds the following features to the front-end element */
 .reset-00{
-  border-bottom-color: black;
+position:relative;
+display:block;
+top:3px;
+border-bottom-color: black;
 }
-
-
 
 /* positions the backend element directly under the front end element */
 .reset-01{
-  position:relative;
-  display:block;
-  top:-49px;
-  border-bottom-color: black;
+position:relative;
+display:block;
+top:2px;
+border-bottom-color: black;
 
 }
 
 /* positions the database dropdown contents directly under the library/framework element */
 .reset-02{
-  position:relative;
-  display:block;
-  top:-97px;
-  border-bottom-color: black;
+position:relative;
+display:block;
+top:0px;
+border-bottom-color: black;
 }
 
 /* positions the library/framework directly under the database element */
 .reset-03{
-  position:relative;
-  display:block;
-  top:-73px;
-  border-bottom-color:black;
+position:relative;
+display:block;
+top:1px;
+border-bottom-color:black;
 
 }
 
 /* positions the version control element directly under the lirary/framework element */
 .reset-04{
-  position:relative;
-  display:block;
-  top:-121px;
+position:relative;
+display:block;
+top:-1px;
 }
 
 /* positions the log-out element directly under the lirary/framework element */
 .reset-05{
-  position:relative;
-  display:block;
-  top:-117px;
+position:relative;
+display:block;
+top:-2px;
 }
 
 
 
- #check:checked ~ .barra{
- transform: translateX(400px); /* makes the icone return the list items to its original position upon click */
- }
- 
- /* makes the list item sway downwards before hiding and returning */
- #check:checked ~ .barra nav a .link{
- opacity:1;
- margin-top: 0;
- transition-delay: .2s; /* reduces the time for the return of the list items upon clicking of the icone */
- }
+#check:checked ~ .barra{
+transform: translateX(400px); /* makes the icone return the list items to its original position upon click */
+}
 
- /* Hides the contents of the sub-menu-1 list items */
- .sub-menu-1{
-  display:none;
+/* makes the list item sway downwards before hiding and returning */
+#check:checked ~ .barra nav a .link{
+opacity:1;
+margin-top: 0;
+transition-delay: .2s; /* reduces the time for the return of the list items upon clicking of the icone */
+}
+
+/* Hides the contents of the sub-menu-1 list items */
+.sub-menu-1{
+display:none;
 }
 
 
 .barra ul{
-  display:block;
-  list-style: none;
+display:block;
+list-style: none;
 }
 
 /* adds the following features to menu-bar ul li contents */
 .barra ul li{
-  width:330px;
-  margin: -15px;
-  padding: 15px;
-  margin-top:-15px;
+width:330px;
+margin: -15px;
+padding: 15px;
+margin-top:-15px;
 
 }
 
 /* adds the following features to the frontend drop down list items upon hover over the frontend elements  */
 .barra ul li:hover .sub-menu-1{
-  display: none;
-  position: absolute;
-  background-color:green;
-  margin-top:-1px;
-  margin-left: -15px;
-  width:325px;
-  border-radius: 7px;
-  left:40px;
-  height:105px;
+display: none;
+position: absolute;
+background-color:green;
+margin-top:-1px;
+margin-left: -15px;
+width:325px;
+border-radius: 7px;
+left:40px;
+height:105px;
 }
 
 
 
 /* adds the following features to the backEnd dropdown list items upon hover over the backend element  */
 .sub-menu-004{
-  display: none;
-  position: absolute;
-  background-color:green;
-  margin-top:-1px;
-  margin-left: -15px;
-  top:124px;
-  width:325px;
-  border-radius: 7px;
-  left:40px;
-  height:105px;
+display: none;
+position: absolute;
+background-color:green;
+margin-top:-1px;
+margin-left: -15px;
+top:124px;
+width:325px;
+border-radius: 7px;
+left:40px;
+height:105px;
 }
-
-
 
 /* adds the following features to the database dropdown list items upon hover over the database element  */
 .sub-menu-005{
-  display: none;
-  position: absolute;
-  background-color:green;
-  margin-top:-1px;
-  margin-left: -15px;
-  top:124px;
-  width:325px;
-  border-radius: 7px;
-  left:40px;
-  height:105px;
-  opacity:0px;
+display: none;
+position: absolute;
+background-color:green;
+margin-top:-1px;
+margin-left: -15px;
+top:124px;
+width:325px;
+border-radius: 7px;
+left:40px;
+height:105px;
+opacity:0px;
 }
 
 /* adds the following features to the back-end dropdown list items */
 .set-01{
-  position:relative;
-  display:block;
-  top:-30px;
+position:relative;
+display:block;
+top:-30px;
 }
-}
 
-
-
-
-
-
-
-/* adds the following features to the backend element item */
+/* adds the foll
+owing features to the backend element item */
 .set-1{
-  position:relative;
-  display:block;
-  top:-15px;
+position:relative;
+display:block;
+top:-15px;
 }
 
 
 /* adds the following features to the database item */
 .set-2{
-  position:relative;
-  display:block;
-  top:-30px; 
+position:relative;
+display:block;
+top:-30px; 
 }
-  /* adds the following features to the framework/library element */
- 
- .set-3{
-  position:relative;
-  display:block;
-  top:-45px;
- }
+/* adds the following features to the framework/library element */
 
- /* adds the follwoing features to the version control element */
+.set-3{
+position:relative;
+display:block;
+top:-45px;
+}
+
+/* adds the follwoing features to the version control element */
 .set-4{
-  position:relative;
-  display:block;
-  top:150 /*-60px;*/
+position:relative;
+display:block;
+top:150 /*-60px;*/
 }
 
 /* adds the following features to the logout item */
 .set-5{
-  position:relative;
-  display:block;
-  top:200px; /*-75px;*/
+position:relative;
+display:block;
+top:200px; /*-75px;*/
 }
-
-/*adds the following featuresd to the front-end dropdown listitems */
 
 /* adds the following properties to the HTML element */
 #m-1{
@@ -286,89 +310,89 @@ top:2px;
 
 /* adds the following properties to the css element */
 #m-2{
-  position:absolute;
-  display:block;
-  top:20px;
+position:absolute;
+display:block;
+top:20px;
 }
 
 /* adds the following p[roperties to the javascript element */
 #m-3{
-  position:absolute;
-  display:block;
-  top:40px;
+position:absolute;
+display:block;
+top:40px;
 }
 
 /* adds the following properties to the bootstrap element */
 #m-4{
-  position:absolute;
-  display:block;
-  top:60px;
+position:absolute;
+display:block;
+top:60px;
 }
 
 /* adds the following properties to the react element */
 #m-5{
-  position:absolute;
-  display:block;
-  top:80px;
+position:absolute;
+display:block;
+top:80px;
 }
 
 /* adds the following features to the backend dropdown list items */
 
 /* adds the following features to the php element */
 #b-1{
-  position:absolute;
-  display:block;
-  top:7px;
+position:absolute;
+display:block;
+top:7px;
 }
- /* adds the following features to the laravel element */
- #b-2{
-   position:absolute;
-   display:block;
-   top:38px;
- }
+/* adds the following features to the laravel element */
+#b-2{
+ position:absolute;
+ display:block;
+ top:38px;
+}
 
- /* adds the follwing featutures to the nodejs element */
- #b-3{
-   position: absolute;
-   display:block;
-   top:70px;
- }
+/* adds the follwing featutures to the nodejs element */
+#b-3{
+ position: absolute;
+ display:block;
+ top:70px;
+}
 
 
 .set-4{
-  position:relative;
-  display:block;
-  top:-60px;
+position:relative;
+display:block;
+top:-60px;
 }
 
 /* adds the following features to the frameLibrary dropdown list items upon hover over the frameLibrary element  */
 .sub-menu-006{
-  display: none;
-  position: absolute;
-  background-color:green;
-  margin-top:-1px;
-  margin-left: -15px;
-  top:124px;
-  width:325px;
-  border-radius: 7px;
-  left:40px;
-  height:105px;
-  opacity:0px;
+display: none;
+position: absolute;
+background-color:green;
+margin-top:-1px;
+margin-left: -15px;
+top:124px;
+width:325px;
+border-radius: 7px;
+left:40px;
+height:105px;
+opacity:0px;
 }
 
 /* adds the following features to the version control dropdown list items upon hover over the version control element */
 .sub-menu-007{
-  display:none;
-  position: absolute;
-  background-color:green;
-  margin-top:-1px;
-  margin-left: -15px;
-  top:306px;
-  width:325px;
-  border-radius: 7px;
-  left:40px;
-  height:105px;
-  opacity:0px;
+display:none;
+position: absolute;
+background-color:green;
+margin-top:-1px;
+margin-left: -15px;
+top:306px;
+width:325px;
+border-radius: 7px;
+left:40px;
+height:105px;
+opacity:0px;
 }
 
 
@@ -378,12 +402,3 @@ position:relative;
 display:block;
 top:-75px;
 }
-  
-.sub-menu-1:hover{
-  background-color: orange;
-}
-
-.dropdown-1:hover .sub-menu-1{
-  display: block;
-}
-

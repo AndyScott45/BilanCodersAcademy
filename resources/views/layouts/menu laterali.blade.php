@@ -54,15 +54,13 @@
 <nav>
    
 <li><a href=""><div class='link reset-00'>FRONT-END &#9662;</div></a>
-        <ul class="dropdown-1">
+        <ul class="dropdown-1 set-00">
             <li><a href="#">HTML</a></li>
             <li><a href="#">CSS</a></li>
             <li><a href="#">JAVASCRIPT</a></li>
             <li><a href="#">TYPESCRIPT</a></li>
         </ul>
    </li>
-
-
 
 <li><a href=""><div class='link reset-01'>BACK-END  &#9662;</div></a>
         <ul class="dropdown-1 set-01">
@@ -84,7 +82,7 @@
 
 
 <li> <a href=""><div class='link reset-02'>DATABASE &#9662;</div></a>
-    <ul class="dropdown-1 set-02">
+    <ul class="dropdown-1 set-03">
            <li><a href="#">MYSQL</a></li>
             <li><a href="#">POSTGRE</a></li>
             <li><a href="#">MONGOBDB</a></li>
@@ -93,7 +91,7 @@
 
 
 <li> <a href=""><div class='link reset-04'>VERSION CONTROL&#9662;</div></a>
-<ul class="dropdown-1 set-03">
+<ul class="dropdown-1 set-04">
            <li><a href="#">GIT</a></li>
             <li><a href="#">BITBUCKET</a></li>
     </ul>
@@ -145,8 +143,6 @@
                 </div>
             </div>
         </nav>
-
-    </div>
     </div>
 </body>
 </html>
