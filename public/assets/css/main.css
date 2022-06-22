@@ -1,6 +1,11 @@
-.searchMenu{
+*{ 
+    margin:0;
+    padding:0;
+}
+
+nav {
     position: relative;
-    left:200px; 
+    top:0px;
 }
 
 .shift-me{
@@ -26,14 +31,10 @@
     background-color: brown;
 }
 
-
-/* adds the following properties to the search button */
-.searchMenu{
-    position: relative;
-    left:3px;
-    width:350px;
-    top:3px;
-
+/* moves the bootstrap search bar element within the specified distance from the login button */
+#myInput{
+  position:relative;
+  left:4px;  
 }
 
 /* positions the dropdown-menu just below and in line with the bootstrap navbar */
@@ -131,7 +132,7 @@ left:10%;
 }
 
 #myId{
-    background color:green;
+    background-color:green;
     position:absolute;
     top:98px;
 }

@@ -1,7 +1,128 @@
-@extends('layouts.app')
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@section('content')
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/target.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+  <title>Hello, world!</title>
+  </head>
+  <body>
 
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 navbar-fixed-top">
+        <div class="container-fluid">
+        <img src="assets/img/mydec.jpg" class="C" salt="" width="60" height="60">
+          <a class="navbar-brand shift-me" id="header" href="{{ url('/') }}">ILANCodersAcademy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item item1 dropdown" id="item1">
+                <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="item1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FRONTEND
+                </a>
+                <ul class="dropdown-menu item1 pull-right" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">HTML5</a></li>
+                  
+                  <li><a class="dropdown-item" href="#">CSS3</a></li>
+                  
+                  <li><a class="dropdown-item" href="#">JAVASCRIPT</a></li>
+                  
+                <li><a class="dropdown-item" href="#">BOOTSTRAP</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" id="item2">
+                <a class="nav-link item2 dropdown-toggle drop-down active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  BACKEND
+                </a>
+                <ul class="dropdown-menu item2" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">PHP</a></li>
+                  <li><a class="dropdown-item" href="#">LARAVEL</a></li>
+
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" id="item3">
+                <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DATABASES
+                </a>
+
+                <ul class="dropdown-menu item3" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">MYSQL</a></li>
+                  <li><a class="dropdown-item" href="#">POSTGRE</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" id="item4">
+                <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               TECH NEWS 
+                </a>
+                <ul class="dropdown-menu item4" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>     
+
+              <li class="nav-item dropdown" id="item5">
+                <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVERS
+                </a>
+                <ul class="dropdown-menu item5" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">APACHE</a></li>
+                </ul>
+              </li>
+
+             <li class="nav-item dropdown">
+            @if (Route::has('login'))
+                <li class="nav-item dropdown">
+                    @auth
+   <a class="nav-link  drop-down active" aria-current="page" href="{{ url('/home') }}">HOME</a>
+                    @else
+                    <a class="nav-link sub-1 drop-down active" id="item6" aria-current="page" href="{{ url('/login') }}">LOGIN</a>
+
+<!--    prevents the register element from appearing as a clickable button on the navigation bar 
+             @if (Route::has('register'))
+             <li class="nav-item dropdown">
+             <a class="nav-link sub-way drop-down active" aria-current="page" href="{{ url('/register') }}">REGISTER</a>                       
+    @endif
+-->
+
+    @endauth
+    </li>
+    @endif
+    </li>
+
+<!-- Adds a searchMenu to the welcome page -->
+<div class="search-menu">
+     <form autocomplete="off" action="/action_page.php" class="d-flex">
+            <input class="form-control autocomplete me-2" type="text" name="myCountry" id="myInput" placeholder="Country" aria-label="Search">
+          
+            <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+</div>
+
+</li>
+</ul>
+        </div>
+        </div>
+      </nav>
+
+
+
+<!-- Images starts here -->
 <div class="container">
 <div class="row">
 
@@ -168,158 +289,10 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-12 col-sm-12 col-xs-12 p-4 mx-auto p-0">
-                   <div class="my-page p-2 rounded"> 
-                        <h1 class="my-page2">Introduction to Computer Programming</h1>
-                          <p class="starter-2">Computer Programming is the process of telling a computer to perform specific actions by giving it a set of instructions. These instructions are referred to as programs. A person who writes instructions is a computer programmer. The instructions may come in different langauges like Javascript, PHP, python. Ruby on Rails, Asp.net. These languages are referred to as programming languages.</p>
-                   </div>
-               </div>  
-
-        </div>
-        </div>
-
-
-
-
-
-<!-- WORKING REGISTRATION SYSTEM  -->
-<!--
-<div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 mx-auto p-0">
-                <div class="card">
-                    <div class="login-box">
-                        <div class="card-header"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Register</label>
-                            <div class="login-space">
-                                <div class="sign-up-form card-body">
-                                    <form method="POST" action="{{ route('register') }}">
-                                        @csrf
-                                        <div class="group form-group row">
-                                            <label for="name" class="label col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
-                                               <div class="col-md-6">
-                                                  <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="Username" autofocus>
-                                                  @error('name')
-                                                  <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                  </span>
-                                                  @enderror
-                                                </div>
-                                          </div>
-                                        <div class="group form-group row">
-                                            <label for="email" class="label col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-                                               <div class="col-md-6">
-                                                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-                                                  @error('email')
-                                                  <span class="invalid-feedback" role="alert">
-                                                  <strong>{{ $message }}</strong>
-                                                  </span>
-                                                  @enderror
-                                               </div>
-                                         </div>
-                                         <div class="group form-group row">
-                                            <label for="password" class="label col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-                                                <div class="col-md-6">
-                                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" data-type="password" required autocomplete="new-password">
-                                                     @error('password')
-                                                     <span class="invalid-feedback" role="alert">
-                                                         <strong>{{ $message }}</strong>
-                                                     </span>
-                                                     @enderror
-                                                </div>
-                                         </div>
-                                         <div class="group form-group row">
-                                            <label for="password-confirm" class="label col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-                                            <div class="col-md-6">
-                                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" data-type="password" required autocomplete="new-password"> 
-                                            </div>
-                                          </div>
-                                         <div class="form-group row mb-0">
-                                            <div class="col-md-6 offset-md-4">
-                                                <button type="submit" class="btn btn-primary">
-                                                    {{ __('Register') }}
-                                                </button>
-                                            </div>
-                                        </div>
-                                     </form>   
-                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!--
-<div class="container">
-<div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12 mx-auto p-0">
-    <div class="card">
-    <div class="login-box">
-    <div class="login-snip card-header"><input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">{{ __('Login') }}</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">{{ __('REGISTER') }}</label>
-    <div class="login-space">
-           
-  <div class="sign-up-form card-body"> 
-      <form method="POST" action="{{ route('login') }}">
-          @csrf           
-             <div class="group form-group row"> 
-                 <label for="user" class="label">{{ __('Username') }}</label> 
-                     <div class="col-md-12">
-                        <input id="user" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus> 
-                             @error('username')
-                                 <span class="invalid-feedback" role="alert">
-                                     <strong>{{ $message }}</strong>
-                                         </span>
-                   @enderror
-              </div>
-    </div>
-      <div class="group form-group row"> 
-          <label for="email" class="label col-form-label text-md-right">{{ __('Email Address') }}</label> 
-              <div class="col-md-12">
-                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-                      @error('email')
-                        <span class="invalid-feedback" role="alert">
-                          <strong>{{ $message }}</strong>
-                             </span>
-                       @enderror
-          </div>
-      </div>
-               
-               
-<div class="group form-group row"> 
-       <label for="pass" class="label">{{ __('Password') }}</label> 
-           <div class="col-md-12">
-              <input id="pass" type="password" class="form-control @error('password') is-invalid @enderror" data-type="password" name="password" required autocomplete="new-password"> 
-                   @error('password')
-                       <span class="invalid-feedback" role="alert">
-                           <strong>{{ $message }}</strong>
-                               </span>
-                   @enderror
-          </div>
-  </div>
-<div class="group form-group row">  
-       <label for="pass" class="label">{{ __('Repeat Password') }}</label> 
-           <div class="col-md-12">    
-               <input id="pass" class="form-control" type="password" data-type="password" name="password_confirmation" required autocomplete="new-password">
-           </div>
 </div>
-<div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
 </div>
-<div class="hr"></div>
-<div class="foot"> <label for="tab-1">{{ __('Already Member') }}</label> </div>
-                 </form>
-                </div>
-               </div>
-              </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div> 
---> 
-@endsection
+
+<script type="text/javascript" src="assets/qb/main.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

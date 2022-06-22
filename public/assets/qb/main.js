@@ -1,3 +1,9 @@
+var editPosition=document.getElementsByClassName("d-flex");
+
+
+
+
+
 /* targets the frontend button and adds a green background hover effect to it as well as the following properties to the other elements */
 var addBackgroundFrontEndHover=document.getElementById("item1");
 addBackgroundFrontEndHover.addEventListener('show.bs.dropdown', function () {

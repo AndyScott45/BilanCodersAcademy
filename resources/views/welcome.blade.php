@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="/public/assets/css/app.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/target.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/adjust.css">
     
   <title>Hello, world!</title>
   </head>
   <body>
 
     <!-- Navbar Starts -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 navbar-fixed-top">
         <div class="container-fluid">
         <img src="assets/img/mydec.jpg" class="C" salt="" width="60" height="60">
           <a class="navbar-brand shift-me" id="header" href="{{ url('/') }}">ILANCodersAcademy</a>
@@ -105,21 +106,16 @@
     </li>
 
 <!-- Adds a searchMenu to the welcome page -->
-
-<div class="searchMenu">
-            <form autocomplete="off" action="/action_page.php" class="d-flex">
-              <input class="form-control autocomplete me-2" type="text" name="myCountry" id="myInput" placeholder="Country" aria-label="Search">
-              <input type="submit">
-              
-              <!--
-              <button class="btn btn-outline-success" type="submit">Search</button> 
-              -->
-            </form>
+<div class="search-menu">
+     <form autocomplete="off" action="/action_page.php" class="d-flex">
+            <input class="form-control autocomplete me-2" type="text" name="myCountry" id="myInput" placeholder="Country" aria-label="Search">
+          
+            <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
 </div>
 
 </li>
 </ul>
-        </div>
         </div>
         </div>
       </nav>

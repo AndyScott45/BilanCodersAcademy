@@ -1,8 +1,6 @@
-
- /* adds following properties to the search-menu on the login page */
-.searchMenu{
-    position: relative;
-    left:-15px;
-    width:350px;
+/* moves the bootstrap search bar element within the specified distance from the login button */
+#myInput{
+    position:relative;
+    left:4px;  
     top:1px;
-}
+  }
