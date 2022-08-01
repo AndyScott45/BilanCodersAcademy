@@ -17,7 +17,7 @@
   <body>
 
     <!-- Navbar Starts -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 navbar-fixed-top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-3 navbar-fixed-top">
         <div class="container-fluid">
         <img src="assets/img/mydec.jpg" class="C" salt="" width="60" height="60">
           <a class="navbar-brand shift-me" id="header" href="{{ url('/') }}">ILANCodersAcademy</a>
@@ -110,7 +110,7 @@
      <form autocomplete="off" action="/action_page.php" class="d-flex">
             <input class="form-control autocomplete me-2" type="text" name="myCountry" id="myInput" placeholder="Country" aria-label="Search">
           
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-warning" type="submit">Search</button>
       </form>
 </div>
 
@@ -123,20 +123,20 @@
 
 
 <!-- Images starts here -->
-<div class="container">
-<div class="row">
+<div class="container .px-4">
+<div class="row gx-5">
 
 <!-- adds an image of kids learning to code to the BilanCodersAcademy Register page -->
-<div class="col-md-6 col-sm-12 col-xs-12">
-            <div class="my-images">
-                    <a href="#">
-                        <img class="resize" src="assets/img/learnCode.jpg" alt="Kids learning to code at the BilanCodersAcademy">
-                    </a>
-            </div>
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 get-it">
+<div class="my-images" id="center">
+<a href="#">                  
+ <img class="resize" src="assets/img/learnCode.jpg" alt="Kids learning to code at the BilanCodersAcademy">  
+ </a>                   
+</div>
 </div>
 
-    <div class="col-md-6 col-sm-12 col-xs-12 mx-auto p-0">
-    <div class="card">
+
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
     <div class="login-box">
     <div class="card-header"><input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">{{ __('Login') }}</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">{{ __('Sign-Up') }}</label>
     <div class="login-space">
@@ -290,9 +290,10 @@
                     </div>
                 </div>
 </div>
-</div>
 
 <script type="text/javascript" src="assets/qb/main.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

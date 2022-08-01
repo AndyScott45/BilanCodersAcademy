@@ -16,8 +16,8 @@
   </head>
   <body>
 
-    <!-- Navbar Starts -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 navbar-fixed-top">
+    <!-- Navbar Starts  <nav class="navbar fixed-top navbar-light bg-light">-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-3">
         <div class="container-fluid">
         <img src="assets/img/mydec.jpg" class="C" salt="" width="60" height="60">
           <a class="navbar-brand shift-me" id="header" href="{{ url('/') }}">ILANCodersAcademy</a>
@@ -25,13 +25,13 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb                                                                    -lg-0">
 
             <li class="nav-item item1 dropdown" id="item1">
                 <a class="nav-link dropdown-toggle drop-down active" aria-current="page" href="#" id="item1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   FRONTEND
                 </a>
-                <ul class="dropdown-menu item1 pull-right" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu item1" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">HTML5</a></li>
                   
                   <li><a class="dropdown-item" href="#">CSS3</a></li>
@@ -110,7 +110,7 @@
      <form autocomplete="off" action="/action_page.php" class="d-flex">
             <input class="form-control autocomplete me-2" type="text" name="myCountry" id="myInput" placeholder="Country" aria-label="Search">
           
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-warning" type="submit">Search</button>
       </form>
 </div>
 
@@ -143,11 +143,11 @@
       </div>
      </div>
 
-     <div class="col-md-6 col-sm-12 col-xs-12">
-      <div class="images">
-      <img src="assets/img/kidsCode.jpg" alt="kids practicing coding at the BilanCodersAcademy">
-</div>
-</div>
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="images">
+        <img src="assets/img/kidsCode.jpg" alt="kids practicing coding at the BilanCodersAcademy">
+    </div>
+    </div>
 
 
 </div>

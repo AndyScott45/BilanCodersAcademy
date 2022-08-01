@@ -1,12 +1,7 @@
-*{ 
-    margin:0;
-    padding:0;
+body { 
+    padding-top: 80px; /* keeps the navbar fixed at the top */
 }
 
-nav {
-    position: relative;
-    top:0px;
-}
 
 .shift-me{
     color:blue;
@@ -23,8 +18,8 @@ nav {
 }
 
 .navbar{
-    position: relative;
-    top:10px;
+    position: fixed;
+    
 }
 
 .nav-item-1{
@@ -61,6 +56,10 @@ background-color:#050542;
 padding-bottom: 20px;
 height: 34px;
 color:green;
+}
+
+.text-primary:hover{
+    background-color:yellow;
 }
 
 /*
