@@ -8,16 +8,20 @@ body {
     overflow-x: hidden;
 }
 
-/* adds the following properties to the login page */
-.card-header {
-    position:relative;
-    width:420px;
-    left:-45px;
-    top:3px;
-    height: 520px; 
-    padding: 90px 70px 50px 70px;
-    background:#1b1b1b; /* rgba(0, 77, 77, .9);  */   
+.hr-1{
+    position:absolute;
+    top:30px;
 }
+
+/* positions the login/registration system at the center of the page on landscape tablets of size screen size 768px and above */
+.card-header {
+    position:absolute;
+    left:312px;
+    top:81px;
+    width:265px; /* the login and signup bottom automatically stakes on each other at this width */
+    margin-right:0px;
+    margin-left:0px;
+        } 
 
 /* adds the following properties to the body */
 body {
@@ -39,37 +43,94 @@ body {
     padding: 90px 70px 50px 70px;
     background:#1b1b1b; /* rgba(0, 77, 77, .9);  */   
 }
+
+/* positions the kids learning computer programming image at the center of the page on portrait tablets and large phones of size screen size 600px and above */
+.my-images img{
+    position:absolute;
+    left:20px;
+    top:130px;
+    height:4200px;
+    width:300px;
+}
+
+
+
+/* positions the login/registration system at the center of the page on landscape tablets of size screen size 768px and above */
+.card-header {
+    position:absolute;
+    left:312px;
+    top:81px;
+    width:265px; /* the login and signup bottom automatically stakes on each other at this width */
+    margin-right:0px;
+    margin-left:0px;
+        } 
+
+/* adds the following properties to the body */
+body {
+    margin: 0;
+    color:gold;
+    background-color: lightgreen;
+    font: 600 16px/18px 'Open Sans', sans-serif;
+    overflow : scroll;
+    overflow-x: hidden;
+}
+
+
 /* adds the following media query to the body element; take note of the executed order of the media query */
 /* follow this executed order */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:600px){
     body {background-color:yellow;} 
 
-/*positions the login/registration system at the center of the page on small screen devices/view ports of maximum width 600px and below */
-    .card-header {
-        position:absolute;
-        margin-left:auto;
-        margin-right:auto;
-        left:2px;
-        right:2px;
-        text-align:center;
-        top:445px; 
-        }
+ /* positions the kids learning computer programming image at the center of the page on extra small screen devices */
+ .my-images img{
+    position:absolute;
+    left:8px;
+    top:200px;
+    height:300px;
+    width:200px;
+    margin-left:-3px;
+    margin-right:0px;
+}
 
-    /* positions the kids learning computer programming image directly at the center of the page on small screen devices/view ports of maximum width 600px and below */
-    .my-images img{
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index:1;
-        width:470px;
-        top:85px;
-        };
-    };
+    /* positions the login/registration system at the center of the page on extra small screen devices  */
+.card-header {
+    position:absolute;
+    left:212px;
+    top:81px;
+    width:265px; /* the login and signup bottom automatically stakes on each other at this width */
+    margin-right:0px;
+    margin-left:0px;
+        }  
 
+/* adds the following features to the autocomplete dropdown menu on extra small screen devices  */
+.autocomplete-items {
+    position:absolute;
+    left:-872px;
+    top:286px;
+    }
+
+/* adds the following property to the autocomplete drop-down menu on extra small screen devices  */ 
+.autocomplete-items div{
+    width:454px;  
+}
+
+/* increases the width of the input text field on the above stated viewport size */
+.promote-1{
+    position:absolute;
+    width:30px;
+}
+
+/* adds the following positioning to the signup button on the above stated viewport size */
+#my-button{
+    position:absolute;
+    top:350px;
+    left:45px;
+}
+
+
+
+};
    
 /* this css class properties is called here to activate the media query below */
 .card-header {
@@ -87,31 +148,43 @@ body {
   @media only screen and (min-width: 600px) {
     body {background-color: green;}
 
-/*positions the kids learning computer programming image at the center of the page on portrait tablets and large phones of size screen size 600px and above*/
-    .my-images img{
-     position:absolute;
-     margin-left:auto;
-     margin-right:auto;
-     left:0;
-     right:0;
-     text-align:center;
-     z-index:1;
-     top:85px;
-    }
- 
-/* positions the login/registration system at the center of the page on portrait tablets and large phones of size screen size 600px and above */
-.card-header {
+  /* positions the kids learning computer programming image at the center of the page on portrait tablets and large phones of size screen size 600px and above */
+  .my-images img{
     position:absolute;
-    margin-left:auto;
-    margin-right:auto;
-    left:2px;
-    right:2px;
-    text-align:center;
-    z-index:1;
-    top:525px;
-    } 
+    left:8px;
+    top:130px;
+    height:420px;
+    width:300px;
+    margin-left:-3px;
+    margin-right:0px;
+}
+ 
 
-   };
+  /* positions the login/registration system at the center of the page on portrait tablets and large phones of size screen size 600px and above */
+  .card-header {
+    position:absolute;
+    left:312px;
+    top:81px;
+    width:265px; /* the login and signup bottom automatically stakes on each other at this width */
+    margin-right:0px;
+    margin-left:0px;
+        } 
+
+/* adds the following features to the autocomplete dropdown menu on portrait tablets and large phones of size screen size 600px and above */
+.autocomplete-items {
+    position:absolute;
+    left:-872px;
+    top:286px;
+    }
+
+/* adds the following property to the autocomplete drop-down menu portrait tablets and large phones of size screen size 600px and above */ 
+.autocomplete-items div{
+    width:640px;
+   }
+
+    };
+
+
   
 
    /* the body's css properties is brought further downwards just above the medium devices media query properties. This enables the media query propreties to be active. Take note of the executed order. */
@@ -125,26 +198,99 @@ body {
 }
 
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    body {background-color: blue;}
+  @media only screen and (min-width: 768px) and (max-width:850px) {
+    body {background-color:brown;}
 
-    /* positions the kids learning computer programming image at the center of the page on portrait tablets and large phones of size screen size 600px and above */
+    /* positions the kids learning computer programming image at the center of the page on the above stated device size */
    .my-images img{
        position:absolute;
-       left:-345px;
+       left:10px;
+       top:130px;
+       height:430px;
+       width:378px;
+   }
+
+  /* positions the login/registration system at the center of the page on the above stated device size */
+    .card-header {
+    position:absolute; 
+    left:395px;
+    top:81px;
+    width:350px; /* the login and signup bottom automatically stakes on each other at this width */
+        } 
+
+/* adds the following features to the autocomplete dropdown menu on landscape tablets of between 850px and 992px */
+.autocomplete-items {
+    position:absolute;
+    left:-872px;
+    top:286px;
+    }
+
+/* adds the following property to the autocomplete drop-down menu items on theabove stated device sizes */ 
+.autocomplete-items div{
+    width:668px;
+   }
+
+    };
+
+  /* the body's css properties is brought further downwards just above the medium devices media query properties. This enables the media query propreties to be active. Take note of the executed order. */
+  body {
+    margin: 0;
+    color:gold;
+    background-color: lightgreen;
+    font: 600 16px/18px 'Open Sans', sans-serif;
+    overflow : scroll;
+    overflow-x: hidden;
+}
+
+.autocomplete{
+    position:absolute;
+    background-color:brown;
+   
+}
+
+.autocomplete-items {
+    border:none;
+  
+}
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 850px) and (max-width:992px) {
+    body {background-color:indigo;}
+
+    /* positions the kids learning computer programming image at the center of the page on landscape tablets of size screen size between 850px and 992px */
+   .my-images img{
+       position:absolute;
+       left:43px;
        top:130px;
        height:430px;
        width:400px;
    }
 
-  /* positions the login/registration system at the center of the page on landscape tablets of size screen size 768px and above */
+  /* positions the login/registration system at the center of the page on landscape tablets of size screen size between 850px and 992px */
     .card-header {
     position:absolute;
-    left:405px;
+    left:450px;
     top:81px;
-    width:330px; /* the login and signup bottom automatically stakes on each other at this width */
+    width:370px; /* the login and signup bottom automatically stakes on each other at this width */
         } 
+
+
+/* adds the following features to the autocomplete dropdown menu on landscape tablets of between 850px and 992px */
+    .autocomplete-items {
+    position:absolute;
+    left:-872px;
+    top:286px;
+    }
+
+/* adds the following property to the autocomplete drop-down menu items on theabove stated device sizes */ 
+    .autocomplete-items div{
+     width:845px;
+    }
+
     };
+
+
+
 
 
 
@@ -184,12 +330,12 @@ body {
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    body {background-color: orange;}
+    body {background-color:orange;}
      .my-images img{
         position:absolute;
-        left:-450px;
+        left:43px;
         top:125px;
-        width:500px;
+        width:450px;
         height:422px;
         }
 
@@ -199,6 +345,7 @@ body {
         top:80px;
         width:420px;
             } 
+
         };
 
 
@@ -214,21 +361,34 @@ body {
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    body {background-color: pink;}
+    body {background-color: white;}
     
     .card-header {
         position:absolute;
-        left:300px;
-        top:80px;
+        left:556px;
+        top:83px;
         } 
 
     .my-images img{
         position:absolute;
-        left:-650px;
-        top:128px;
+        left:50px;
+        top:130px;
         height:430px;
+        width:500px;
         }
   
+/* adds the following features to the autocomplete dropdown menu items on large laptops and desktops */
+.autocomplete-items{
+    position:absolute;
+    left:1px;
+    top:38px;
+    width:25px;
+}
+
+/* gives the autocomplete dropdown menu items the following width */
+.autocomplete-items div{
+width:302px;
+}
   };
  
 

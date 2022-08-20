@@ -12,13 +12,14 @@
    display:none;
  }
 
- /* adds the following features to the icone */
+ /* positions the icone symbol at the top left hand corner of the homepage */
  #icone{
    cursor:pointer;
    padding:15px;
    position:absolute;
    Z-index:1;
-   top:-30px;
+   top:-152px;
+   left:90px;
  }
 
  /* adds the following features to barra class */
@@ -28,16 +29,23 @@
    width:300px;
    position:absolute;
    left:-400px; /* makes the icone hide the list items upon click */
-   top:-10px;
+   top:-134px;
  }
 
- /* adds the following features to the nav items */
+ /* positions the nav items directly under the icone symbol */
  nav{ 
    width:100%;
    position:absolute;
-   top:55.3px;
+   top:54px;
    left:0px; 
    list-style: none;
+ }
+
+ /* positions the users name at the top right hand coner of the homepage */
+ .adjust-name{
+   position:absolute;
+   top:-134px;
+   left:-50px;
  }
 
  /* adds the following properties to the link class */

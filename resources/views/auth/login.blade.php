@@ -135,7 +135,7 @@
 </div>
 </div>
 
-
+<!-- login details -->
     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
     <div class="login-box">
     <div class="card-header"><input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">{{ __('Login') }}</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">{{ __('Sign-Up') }}</label>
@@ -211,7 +211,7 @@
                             <div class="login-space">
     
 -->
-                            
+                     <!-- sign up details -->       
                                 <div class="card-body">
                                     <form method="POST" action="{{ route('register') }}">
                                         @csrf
@@ -220,7 +220,7 @@
                                             <label for="name" class="label col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                                                <div class="col-md-12">
-                                                  <input id="name" type="text" class="input" name="name" value="{{ old('name') }}" required autocomplete="Username" autofocus>
+                                                  <input id="name" type="text" class="input promote-1" name="name" value="{{ old('name') }}" required autocomplete="Username" autofocus>
 
                                                   @error('name')
                                                   <span class="invalid-feedback" role="alert">
@@ -234,7 +234,7 @@
                                             <label for="email" class="label col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                                                <div class="col-md-12">
-                                                  <input id="email" type="email" class="input" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                                  <input id="email" type="email" class="input promote-1" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                                   @error('email')
                                                   <span class="invalid-feedback" role="alert">
@@ -249,7 +249,7 @@
                                             <label for="password" class="label col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                                                 <div class="col-md-12">
-                                                     <input id="password" type="password" class="input" name="password" data-type="password" required autocomplete="new-password">
+                                                     <input id="password" type="password" class="input promote-1" name="password" data-type="password" required autocomplete="new-password">
 
                                                      @error('password')
                                                      <span class="invalid-feedback" role="alert">
@@ -264,7 +264,7 @@
                                                   <label for="password-confirm" class="label col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                                              <div class="col-md-12">
-                                                    <input id="password-confirm" type="password" class="input" name="password_confirmation" data-type="password" required autocomplete="new-password"> 
+                                                    <input id="password-confirm" type="password" class="input promote-1" name="password_confirmation" data-type="password" required autocomplete="new-password"> 
                                               </div>
                                           </div>
 

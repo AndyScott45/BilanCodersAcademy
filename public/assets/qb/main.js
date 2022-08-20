@@ -1,9 +1,5 @@
 var editPosition=document.getElementsByClassName("d-flex");
 
-
-
-
-
 /* targets the frontend button and adds a green background hover effect to it as well as the following properties to the other elements */
 var addBackgroundFrontEndHover=document.getElementById("item1");
 addBackgroundFrontEndHover.addEventListener('show.bs.dropdown', function () {
@@ -173,5 +169,24 @@ function autocomplete(inp, arr) {
 
   /*Passes the countries array as the second parameter of the autocomplete function:*/
   autocomplete(document.getElementById("myInput"), countries);
+
+/*
+function myFunction(portTAndL){
+  if (portTAndL.matches){ // if media query matches
+    moveAutocomplete.style.width="700px";
+  } else{
+    moveAutocomplete.style.width="300px";
+  }
+}
+
+  var portTAndL=window.matchMedia("(min-width: 992px)");
+  myFunction(portTAndL) // call listener function at runtime
+  portTAndL.addEventListener(myfunction); // attach listener function on state changes 
+
+  var moveAutocomplete=document.getElementsByClassName("my-trial");
+  */
+
+
+
 
 
