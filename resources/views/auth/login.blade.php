@@ -194,7 +194,7 @@
 <div class="group"> 
      <input type="submit" id="h-effect" class="button" value="Sign In"> 
 </div>
-<div class="hr-1"></div>
+<div class="hr-1" id="smooth-01"></div>
 
 @if (Route::has('password.request'))
 <div class="foot"> <a href="http://127.0.0.1:8000/password/reset">{{ __('Forgot Password?') }} </a></div>
@@ -217,7 +217,7 @@
                                         @csrf
 
                                         <div class="group form-group row">
-                                            <label for="name" class="label col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
+                                            <label for="name" class="label spin-1 col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                                                <div class="col-md-12">
                                                   <input id="name" type="text" class="input promote-1" name="name" value="{{ old('name') }}" required autocomplete="Username" autofocus>
@@ -231,10 +231,10 @@
                                           </div>
 
                                         <div class="group form-group row">
-                                            <label for="email" class="label col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                            <label for="email" class="label spin-2 col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                                                <div class="col-md-12">
-                                                  <input id="email" type="email" class="input promote-1" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                                  <input id="email" type="email" class="input promote-2" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                                   @error('email')
                                                   <span class="invalid-feedback" role="alert">
@@ -246,10 +246,10 @@
                                          </div>
 
                                          <div class="group form-group row">
-                                            <label for="password" class="label col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                                            <label for="password" class="label spin-3 col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                                                 <div class="col-md-12">
-                                                     <input id="password" type="password" class="input promote-1" name="password" data-type="password" required autocomplete="new-password">
+                                                     <input id="password" type="password" class="input promote-3" name="password" data-type="password" required autocomplete="new-password">
 
                                                      @error('password')
                                                      <span class="invalid-feedback" role="alert">
@@ -261,14 +261,14 @@
                                          </div>
 
                                          <div class="group form-group row">
-                                                  <label for="password-confirm" class="label col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                                                  <label for="password-confirm" class="label spin-4 col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                                              <div class="col-md-12">
-                                                    <input id="password-confirm" type="password" class="input promote-1" name="password_confirmation" data-type="password" required autocomplete="new-password"> 
+                                                    <input id="password-confirm" type="password" class="input promote-4" name="password_confirmation" data-type="password" required autocomplete="new-password"> 
                                               </div>
                                           </div>
 
-                                          <div class="hr-1"></div>
+                                          <div class="hr-1 d-effect" id="smooth-02"></div>
 
                                           <div class="group"><input type="submit" id="my-button" class="it-button" value="Sign Up"></div>
                                           

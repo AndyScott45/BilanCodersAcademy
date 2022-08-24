@@ -8,9 +8,11 @@ body {
     overflow-x: hidden;
 }
 
-.hr-1{
-    position:absolute;
-    top:30px;
+/* moves the position of the sign up button to following location */
+#smooth-02{
+    position:relative;
+    left:23px;
+    top:150px;
 }
 
 /* positions the login/registration system at the center of the page on landscape tablets of size screen size 768px and above */
@@ -53,8 +55,6 @@ body {
     width:300px;
 }
 
-
-
 /* positions the login/registration system at the center of the page on landscape tablets of size screen size 768px and above */
 .card-header {
     position:absolute;
@@ -74,13 +74,71 @@ body {
     overflow : scroll;
     overflow-x: hidden;
 }
+/* adds the following positioning to the signup button */
+input#my-button{
+    position:absolute;
+    top:400px;
+}
 
+/* moves the position of the little check-box that is ticked to remember the user details further down the page */
+.form-check-input{
+    position:relative;
+    top:10px;
+    left:20px;
+    }
+
+    
 
 /* adds the following media query to the body element; take note of the executed order of the media query */
 /* follow this executed order */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width:600px){
     body {background-color:yellow;} 
+
+ /* adds the following features to the short straight line on the login page on the above stated device size */
+#smooth-01{
+    position:relative;
+    top:-30px;
+    width:150px;
+    left:10px;    
+}
+
+/* adds the following features to the signup page on the above stated device size */
+#smooth-02{
+    position:relative;
+    left:3px;
+    width:120px;
+    top:120px;
+}
+
+/* adds the following properties to the little check-box that is ticked to remember user details on the above stated device size */
+.form-check-input{
+    position:relative;
+    top:10px;
+    left:-5px;
+    }
+
+/*adds the following properties to the "keep me signed in" text on the above stated device size */
+.form-check-label{
+    position:relative;
+    top:-6px;
+    white-space:nowrap; /* prevents the keep me signed in text from appearing over two lines */
+    left:15px;
+    }
+
+
+.hr-1{
+    position:absolute;
+    top:30px;
+    left:20px;
+}
+
+/* adds the following positioning to the signup button on the above stated viewport size */
+input#my-button{
+    position:absolute;
+    top:320px;
+    left:40px;
+}
 
  /* positions the kids learning computer programming image at the center of the page on extra small screen devices */
  .my-images img{
@@ -93,7 +151,7 @@ body {
     margin-right:0px;
 }
 
-    /* positions the login/registration system at the center of the page on extra small screen devices  */
+/* positions the login/registration system at the center of the page on extra small screen devices  */
 .card-header {
     position:absolute;
     left:212px;
@@ -115,20 +173,65 @@ body {
     width:454px;  
 }
 
-/* increases the width of the input text field on the above stated viewport size */
-.promote-1{
+/* adds the following features to the confirm password element on the above stated device viewport size */
+.spin-1{
+    position:relative;
+    top:-10px;
+}
+
+/* adds the following features to the confirm password element on the above stated device viewport size */
+.spin-2{
+    position:relative;
+    top:13px;
+    white-space: nowrap; /* prevents the email-address text from appearing over two lines */
+}
+
+/* adds the following features to the confirm password element on the above stated device viewport size */
+.spin-3{
     position:absolute;
+    top:148px;
+}
+
+/* adds the following features to the confirm password element on the above stated device viewport size */
+.spin-4{
+    position:absolute;
+    top:220px;
+    white-space:nowrap; /* prevents the confirm password text from appearing over two lines */
+}
+
+/* increases the width of the input text field on the above stated viewport size */
+.promote-1 {
+    position:absolute;
+    top:37px;
     width:30px;
 }
 
-/* adds the following positioning to the signup button on the above stated viewport size */
-#my-button{
+/* increases the width of the input text field on the above stated viewport size */
+.promote-2 {
     position:absolute;
-    top:350px;
-    left:45px;
+    top:110px;
+    width:30px;
 }
 
+/* increases the width of the input text field on the above stated viewport size */
+.promote-3 {
+    position:absolute;
+    top:180px;
+    width:30px;
+}
 
+/* increases the width of the input text field on the above stated viewport size */
+.promote-4{
+    position:absolute;
+    top:252px;
+}
+
+.foot{
+    position:relative;
+    top:-70px;
+    left:18px;
+    white-space:nowrap; /* prevents the forgot password text from appearing over two lines */
+}
 
 };
    
@@ -288,11 +391,6 @@ body {
     }
 
     };
-
-
-
-
-
 
 /* adds a media query to center the kids learning computer image on the login/registration page on the above stated device size 
     .resize{
@@ -662,18 +760,6 @@ a {
     top:56px;
 }
 
-/* moves the position of the little check-box that is ticked to remember the user details further down the page */
-.form-check-input{
-position:relative;
-top:10px;
-}
-
-/*moves the position of the "keep me signed in" text further down the page to be in line with the little-tick-box */
-.form-check-label{
-position:relative;
-top:10px;
-}
-
 /* adjusts the position of the sign-in button on the login/sign-up panel */
 .button{
     position:relative;
@@ -696,12 +782,10 @@ input#h-effect{
 input#h-effect:hover{
     background-color:green;
 }
+
+/* adds a green color to the sign up button upon hover over the element */
 input#my-button:hover{
 background-color:green;
-}
-
-input#my-button{
-    color:white;
 }
 
 #h-effect{
