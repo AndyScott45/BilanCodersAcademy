@@ -185,7 +185,7 @@
 <div class="group"> 
       <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-       <label class="form-check-label" for="remember">
+       <label class="form-check-label position-1" for="remember">
        {{ __('Keep Me Signed In') }}
        </label>
 </div>

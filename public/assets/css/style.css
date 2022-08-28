@@ -87,8 +87,32 @@ input#my-button{
     left:20px;
     }
 
-    
+/* adds the following properties to he footer class */
+.foot {
+    text-align: center;
+    position: relative;
+    top:100px;
+    color:white;
+}
 
+/* adds a margin between the login/signup panel and sign up button */ 
+.hr-1 {
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: white;
+    position: relative;
+    top:-30px;
+    left:2px;
+    text-align: center;
+}
+
+/* adds the following positioning to the signup button */
+input#my-button{
+    position:absolute;
+    top:400px;
+}
+
+   
 /* adds the following media query to the body element; take note of the executed order of the media query */
 /* follow this executed order */
 /* Extra small devices (phones, 600px and down) */
@@ -103,7 +127,7 @@ input#my-button{
     left:10px;    
 }
 
-/* adds the following features to the signup page on the above stated device size */
+/* adds the following features to the signup button on the above stated device size */
 #smooth-02{
     position:relative;
     left:3px;
@@ -126,12 +150,6 @@ input#my-button{
     left:15px;
     }
 
-
-.hr-1{
-    position:absolute;
-    top:30px;
-    left:20px;
-}
 
 /* adds the following positioning to the signup button on the above stated viewport size */
 input#my-button{
@@ -179,7 +197,7 @@ input#my-button{
     top:-10px;
 }
 
-/* adds the following features to the confirm password element on the above stated device viewport size */
+/* adds the following positioning to the email address element on the above stated device sizes*/
 .spin-2{
     position:relative;
     top:13px;
@@ -226,9 +244,10 @@ input#my-button{
     top:252px;
 }
 
+/* adds the following properties to the forgot password element on the above stated device size */
 .foot{
     position:relative;
-    top:-70px;
+    top:-80px;
     left:18px;
     white-space:nowrap; /* prevents the forgot password text from appearing over two lines */
 }
@@ -247,11 +266,119 @@ input#my-button{
 }
 
 
+
   /* Small devices (portrait tablets and large phones, 600px and up)  */ 
   @media only screen and (min-width: 600px) {
     body {background-color: green;}
 
-  /* positions the kids learning computer programming image at the center of the page on portrait tablets and large phones of size screen size 600px and above */
+
+  /* adds the following features to the signup button on the above stated device size */
+   #smooth-02{
+    position:relative;
+    left:3px;
+    width:120px;
+    top:120px;
+}
+ /* adds the following positioning to the signup button */
+       input#my-button{
+        position:absolute;
+        top:320px;
+       
+    }
+
+/* adds the following properties to the little check-box that is ticked to remember user details on the above stated device size */
+    .form-check-input{
+        position:relative;
+        top:10px;
+        left:-10px;
+    }
+    
+/* adds the following positioning to the short white line on the above stated device sizes */
+    .hr-1{
+        position:relative;
+        top:-30px;
+        left:8px;
+        text-align:center;
+        width:152px;
+    }
+
+
+/* adds the following positioning to the username element on the above stated device sizes */
+.spin-1{
+    position:relative;
+    top:-10px;
+}
+
+/* adds the following positioning to the email address element on the above stated device sizes*/
+.spin-2{
+    position:relative;
+    top:13px;
+    white-space: nowrap; /* prevents the email-address text from appearing over two lines */
+}
+
+/* adds the following positioning to the password element on the above stated device sizes */
+.spin-3{
+    position:absolute;
+    top:148px;
+}
+
+/* adds the following positioning to the confirm password element on the above stated device sizes*/
+.spin-4{
+    position:absolute;
+    top:220px;
+    white-space:nowrap; /* prevents the confirm password text from appearing over two lines */
+}
+
+/* increases the width of the username input text field on the above stated viewport size */
+.promote-1 {
+    position:absolute;
+    top:37px;
+    width:30px;
+}
+
+/* increases the width of the email address input text field on the above stated viewport size */
+.promote-2 {
+    position:absolute;
+    top:110px;
+    width:30px;
+}
+
+/* increases the width of the password text field on the above stated viewport size */
+.promote-3 {
+    position:absolute;
+    top:180px;
+    width:30px;
+}
+
+/* increases the width of the confirm password input text field on the above stated viewport size */
+.promote-4{
+    position:absolute;
+    top:252px;
+}
+/* reduces the space between the little check-box and the keep me signed in text on the above stated device sizes */
+.form-check-label{
+    position:relative;
+    top:-6px;
+    white-space:nowrap; /* prevents the keep me signed in text from appearing over two lines */
+    left:10px;
+}
+
+/* adds the following positioning to the signup button on the above stated viewport size */
+input#my-button{
+    position:absolute;
+    top:320px;
+    left:40px;
+}
+
+/* positions the forgot password text directly below the short white line on the above stated device sizes */
+    .foot{
+        position:relative;
+        top:-70px;
+        left:18px;
+        white-space:nowrap; /* prevents the forgot password text from appearing over two lines */
+    }
+
+    /* positions the kids learning computer programming image at the center of the page on portrait tablets and large phones of size screen size 600px and above */
   .my-images img{
     position:absolute;
     left:8px;
@@ -356,11 +483,11 @@ input#my-button{
   
 }
 
-  /* Medium devices (landscape tablets, 768px and up) */
+ /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 850px) and (max-width:992px) {
     body {background-color:indigo;}
 
-    /* positions the kids learning computer programming image at the center of the page on landscape tablets of size screen size between 850px and 992px */
+ /* positions the kids learning computer programming image at the center of the page on landscape tablets of size screen size between 850px and 992px */
    .my-images img{
        position:absolute;
        left:43px;
@@ -686,26 +813,6 @@ a {
     text-decoration: none
 }
 
-/* adds a margin between the login/signup panel and sign up button */ 
-.hr-1 {
-    height: 2px;
-    margin: 60px 0 50px 0;
-    background: white;
-    position: relative;
-    top:-30px;
-    left:2px;
-    text-align: center;
-}
-
-/* adds the following properties to he footer class */
-.foot {
-    text-align: center;
-    position: relative;
-    top:-100px;
-    color:white;
-
-}
-
 /* adds the following properties to the login/sign up panel */
 .card {
     position: relative;
@@ -759,6 +866,7 @@ a {
     position:relative;
     top:56px;
 }
+
 
 /* adjusts the position of the sign-in button on the login/sign-up panel */
 .button{
